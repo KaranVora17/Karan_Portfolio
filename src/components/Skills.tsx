@@ -20,71 +20,57 @@ const Skills = () => {
     threshold: 0.1
   });
 
-  const skillCategories = [
-    {
-      category: "OS",
-      icon: <Terminal className="text-green-400" size={24} />,
-      skills: [
-        { name: "Linux", level: 85, command: "uname -a" }
-      ]
-    },
-    {
-      category: "Languages",
-      icon: <Code className="text-green-300" size={24} />,
-      skills: [
-        { name: "Python", level: 80, command: "python3 --version" },
-        { name: "Bash", level: 75, command: "bash --version" }
-      ]
-    },
-    {
-      category: "Frontend",
-      icon: <Globe className="text-green-500" size={24} />,
-      skills: [
-        { name: "HTML", level: 85, command: "<!DOCTYPE html>" },
-        { name: "CSS", level: 80, command: "body { color: #22c55e; }" },
-        { name: "JavaScript", level: 75, command: "console.log('Hello');" }
-      ]
-    },
-    {
-      category: "Version Control",
-      icon: <GitBranch className="text-green-400" size={24} />,
-      skills: [
-        { name: "Git", level: 85, command: "git status" },
-        { name: "GitHub", level: 80, command: "gh repo list" }
-      ]
-    },
-    {
-      category: "Cloud",
-      icon: <Cloud className="text-green-300" size={24} />,
-      skills: [
-        { name: "AWS", level: 70, command: "aws s3 ls" }
-      ]
-    },
-    {
-      category: "Config Mgmt",
-      icon: <Settings className="text-green-500" size={24} />,
-      skills: [
-        { name: "Ansible", level: 75, command: "ansible-playbook deploy.yml" }
-      ]
-    },
-    {
-      category: "Containerization",
-      icon: <Container className="text-green-400" size={24} />,
-      skills: [
-        { name: "Docker", level: 80, command: "docker ps" },
-        { name: "Kubernetes", level: 65, command: "kubectl get pods" }
-      ]
-    },
-    {
-      category: "CI/CD",
-      icon: <Workflow className="text-green-300" size={24} />,
-      skills: [
-        { name: "Jenkins", level: 70, command: "jenkins-cli build" },
-        { name: "GitHub Actions", level: 75, command: "gh workflow run" }
-      ]
-    }
-  ];
-
+    const skillCategories = [
+            {
+        category: "Cloud",
+        icon: <Cloud className="text-green-300" size={24} />,
+        skills: [
+          { name: "Azure", level: 80, command: "az account show" },
+          { name: "GCP", level: 70, command: "gcloud info" },
+          { name: "AWS", level: 50, command: "aws s3 ls" }
+        ]
+      },
+      {
+        category: "OS",
+        icon: <Terminal className="text-green-400" size={24} />,
+        skills: [
+          { name: "Windows", level: 90, command: "systeminfo" },
+          { name: "Linux", level: 90, command: "uname -a" }
+        ]
+      },
+      {
+        category: "Languages",
+        icon: <Code className="text-green-300" size={24} />,
+        skills: [
+          { name: "Shell", level: 80, command: "sh --version" },
+          { name: "PowerShell", level: 70, command: "Get-Host" }
+        ]
+      },
+      {
+        category: "Version Control",
+        icon: <GitBranch className="text-green-400" size={24} />,
+        skills: [
+          { name: "Git", level: 85, command: "git status" },
+          { name: "GitHub", level: 80, command: "gh repo list" }
+        ]
+      },
+      {
+        category: "Containerization",
+        icon: <Container className="text-green-400" size={24} />,
+        skills: [
+          { name: "Kubernetes", level: 90, command: "kubectl get pods" },
+          { name: "Docker", level: 70, command: "docker ps" }
+        ]
+      },
+      {
+        category: "Config Mgmt",
+        icon: <Settings className="text-green-500" size={24} />,
+        skills: [
+          { name: "Ansible", level: 75, command: "ansible-playbook deploy.yml" }
+        ]
+      }
+    ];
+  
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -158,13 +144,13 @@ const Skills = () => {
                   ## Technical Skills
                 </h2>
                 <p className="text-green-200 font-mono">
-                  # Proficiency levels across various technologies and tools
+                  # Proficiency levels across various technologies and tools..
                 </p>
               </div>
             </div>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skillCategories.map((category, categoryIndex) => (
               <motion.div
                 key={categoryIndex}
@@ -296,9 +282,7 @@ const Skills = () => {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1.2, duration: 0.8 }}
                 >
-                  Continuously expanding my skill set through hands-on projects, 
-                  certifications, and real-world applications. Always eager to learn 
-                  new technologies and methodologies in the ever-evolving DevOps landscape.
+                  Continuously deepening expertise in systems reliability, distributed architecture, and cloud-native technologies through practical application, advanced certifications, and real-world scalability challenges. Focused on adopting emerging tools, automation frameworks, and observability practices to optimize performance and resilience in complex production environments.
                 </motion.p>
               </div>
             </motion.div>
