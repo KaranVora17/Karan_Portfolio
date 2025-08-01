@@ -45,7 +45,7 @@ const Header = () => {
             <div className="w-8 h-8 rounded bg-gradient-to-r from-green-500 to-green-400 flex items-center justify-center neon-border">
               <Terminal className="text-black" size={16} />
             </div>
-            <span className="text-xl font-bold gradient-text font-mono">~/vaibhavi</span>
+            <span className="text-xl font-bold gradient-text font-mono">~/karan</span>
           </motion.a>
 
           {/* Desktop Navigation */}
@@ -68,7 +68,7 @@ const Header = () => {
           {/* Social Links */}
           <div className="hidden md:flex items-center space-x-4">
             <motion.a
-              href="https://github.com/VaibhaviSugandhi1733"
+              href="https://github.com/KaranVora17"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, rotate: 5 }}
@@ -78,7 +78,7 @@ const Header = () => {
               <Github size={20} />
             </motion.a>
             <motion.a
-              href="https://linkedin.com/in/vaibhavi-sugandhi"
+              href="https://linkedin.com/in/karanvora17/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, rotate: 5 }}
@@ -88,7 +88,7 @@ const Header = () => {
               <Linkedin size={20} />
             </motion.a>
             <motion.a
-              href="mailto:vaibhavi.sugandhi@email.com"
+              href="mailto:vorakaran.17@email.com"
               whileHover={{ scale: 1.1, rotate: 5 }}
               whileTap={{ scale: 0.9 }}
               className="text-green-300 hover:text-green-400 transition-colors duration-200 glow-effect p-2 rounded"
@@ -139,7 +139,7 @@ const Header = () => {
               ))}
               <div className="flex space-x-4 pt-3 border-t border-green-500/30">
                 <motion.a
-                  href="https://github.com/VaibhaviSugandhi1733"
+                  href="https://github.com/KaranVora17"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
@@ -148,7 +148,7 @@ const Header = () => {
                   <Github size={20} />
                 </motion.a>
                 <motion.a
-                  href="https://linkedin.com/in/vaibhavi-sugandhi"
+                  href="https://linkedin.com/in/karanvora17/"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
@@ -157,7 +157,7 @@ const Header = () => {
                   <Linkedin size={20} />
                 </motion.a>
                 <motion.a
-                  href="mailto:vaibhavi.sugandhi@email.com"
+                  href="mailto:vorakaran.17@email.com"
                   whileHover={{ scale: 1.1 }}
                   className="text-green-300 hover:text-green-400 transition-colors duration-200"
                 >

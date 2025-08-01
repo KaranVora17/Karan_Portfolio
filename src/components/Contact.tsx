@@ -177,22 +177,22 @@ const Contact = () => {
   const CONTACTS = [
     {
       label: 'Email',
-      value: 'vaibhavi.sugandhi03@gmail.com',
+      value: 'vorakaran.17@gmail.com',
       icon: Mail,
-      href: 'mailto:vaibhavi.sugandhi03@gmail.com',
+      href: 'mailto:vorakaran.17@gmail.com',
       copyable: true,
     },
     {
       label: 'LinkedIn',
-      value: 'linkedin.com/in/vaibhavisugandhi',
+      value: 'linkedin.com/in/karanvora17',
       icon: ExternalLink,
-      href: 'https://www.linkedin.com/in/vaibhavisugandhi',
+      href: 'https://www.linkedin.com/in/karanvora17',
     },
     {
       label: 'GitHub',
-      value: 'github.com/VaibhaviSugandhi1733',
+      value: 'github.com/KaranVora17',
       icon: Github,
-      href: 'https://github.com/VaibhaviSugandhi1733',
+      href: 'https://github.com/KaranVora17',
     },
   ];
 

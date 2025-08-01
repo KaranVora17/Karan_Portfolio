@@ -2,10 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   const year = new Date().getFullYear();
-  const terminalText = `$ echo "@ ${year} Vaibhavi Sugandhi"
-Built with React & Tailwind CSS
-
-$ echo "Designed with ❤️ for the DevOps community"
+  const terminalText = `$ echo "@ ${year} Karan Vora"
 $ echo "Thank you for visiting! Let's connect and build something awesome."`;
   return (
     <footer className="w-full mt-16">

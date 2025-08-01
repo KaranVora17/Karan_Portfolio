@@ -48,7 +48,7 @@ const About = () => {
     {
       icon: <Heart className="text-red-400" size={24} />,
       title: "Passionate Learning",
-      description: "Constantly exploring new technologies and methodologies in the DevOps ecosystem",
+      description: "Constantly exploring new technologies in Cloud ecosystem",
       command: "sudo apt update && apt upgrade knowledge"
     },
     {
@@ -66,7 +66,7 @@ const About = () => {
     {
       icon: <Users className="text-green-400" size={24} />,
       title: "Collaboration",
-      description: "Believing in the power of teamwork and open-source contributions",
+      description: "Believing in the power of teamwork and sharing knowledge",
       command: "git push origin collaboration"
     }
   ];
@@ -102,8 +102,7 @@ const About = () => {
               variants={itemVariants}
               className="text-lg text-green-200 max-w-3xl mx-auto font-mono"
             >
-              Passionate DevOps enthusiast with a strong foundation in cloud technologies, 
-              automation, and modern software delivery practices.
+              SRE enthusiast with a solid foundation in cloud, automation and modern delivery practices.
             </motion.p>
           </motion.div>
 
@@ -131,7 +130,8 @@ const About = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.5, duration: 0.6 }}
                   >
-                    I'm a DevOps enthusiast who thrives on the intersection of development and operations.
+                    Passionate SRE enthusiast thriving at the intersection of software engineering, 
+                    infrastructure reliability and automation.
                   </motion.div>
                   <motion.div 
                     className="command-prompt"
@@ -139,8 +139,8 @@ const About = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.7, duration: 0.6 }}
                   >
-                    My journey began with a fascination for automation and has evolved into a deep passion 
-                    for building robust, scalable infrastructure.
+                    Strong foundation in building scalable, fault-tolerant systems with a focus 
+                    on reliability and operational excellence.
                   </motion.div>
                   <motion.div 
                     className="command-prompt"
@@ -148,7 +148,8 @@ const About = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.9, duration: 0.6 }}
                   >
-                    Currently focused on mastering cloud technologies, containerization, and CI/CD pipelines.
+                    Possess a solid mastery of cloud infrastructure and container orchestration, backed by 
+                    industry certifications, with a focus on building resilient and reliable system operations.
                   </motion.div>
                   <motion.div 
                     className="command-prompt"
@@ -156,8 +157,8 @@ const About = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 1.1, duration: 0.6 }}
                   >
-                    When I'm not working on infrastructure as code, you'll find me contributing to 
-                    open-source projects and exploring cloud-native technologies.
+                    Avid explorer of cloud-native technologies, with a constant drive to automate manual 
+                    processes and improve system reliability.
                   </motion.div>
                 </div>
               </motion.div>

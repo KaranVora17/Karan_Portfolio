@@ -8,8 +8,7 @@ import { motion, easeInOut } from 'framer-motion';
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const fullText = 'DevOps Enthusiast | Automating the Future, One Pipeline at a Time';
-
+  const fullText = 'Karan Vora - Site Reliability Engineer | Vice President at MSCI Inc.';
   useEffect(() => {
     if (currentIndex < fullText.length) {
       const timeout = setTimeout(() => {
@@ -125,7 +124,7 @@ const Hero = () => {
               <div className="terminal-dot red"></div>
               <div className="terminal-dot yellow"></div>
               <div className="terminal-dot green"></div>
-              <span className="text-green-400 text-sm font-mono">vaibhavi@devops:~$</span>
+              <span className="text-green-400 text-sm font-mono">karan@devops:~$</span>
             </div>
             <div className="p-8 space-y-6">
               <div className="text-left space-y-6">
@@ -151,7 +150,7 @@ const Hero = () => {
                           {/* Profile Photo - Replace with your actual image */}
                           <img 
                             src="/profile-photo.jpg" 
-                            alt="Vaibhavi Sugandhi" 
+                            alt="Karan Vora" 
                             className="w-full h-full object-cover rounded-full"
                             onError={(e) => {
                               // Fallback to placeholder if image fails to load
@@ -178,13 +177,11 @@ const Hero = () => {
                   <span className="text-green-400">$</span> whoami
                 </div>
                 <motion.h1 
-                  className="text-4xl md:text-6xl font-bold text-green-300 font-mono hero-glow"
-                  data-text="Vaibhavi Sugandhi"
-                >
-                  Vaibhavi Sugandhi
+                  className="text-4xl md:text-7xl font-bold text-green-300 font-mono hero-glow"
+                  data-text="Karan Vora">
+                  Karan Vora
                 </motion.h1>
-                
-                <div className="command-line mt-6">
+                <div className="command-line mt-2">
                   <span className="text-green-400">$</span> cat /etc/profile
                 </div>
                 <motion.div className="h-16 md:h-20 flex items-start justify-start">
@@ -193,15 +190,13 @@ const Hero = () => {
                   </h2>
                 </motion.div>
 
-                <div className="command-line mt-6">
+                <div className="command-line mt-2">
                   <span className="text-green-400">$</span> echo $MISSION
                 </div>
                 <motion.p
                   variants={itemVariants}
                   className="text-base md:text-lg text-green-100 font-mono leading-relaxed text-left"
-                >
-                  "Passionate about cloud infrastructure, automation, and building scalable systems.<br/>
-                  I love turning complex problems into elegant solutions through code and CI/CD."
+                >"Passionate about cloud infrastructure, automation and designing scalable, reliable systems. I enjoy automating complex operational challenges by crafting elegant, code-driven solutions."
                 </motion.p>
               </div>
             </div>
