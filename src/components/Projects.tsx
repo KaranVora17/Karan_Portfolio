@@ -339,14 +339,14 @@ const Projects = () => {
             className="text-center"
           >
             <motion.a
-              href="https://github.com/VaibhaviSugandhi1733"
+              href="https://github.com/KaranVora17"
               target="_blank"
               rel="noopener noreferrer"
               className="github-profile-btn group inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-green-500 to-green-400 text-black rounded-lg font-semibold transition-all duration-300 font-mono relative overflow-hidden shadow-lg"
               onClick={(e) => {
                 e.preventDefault();
                 console.log('Opening main GitHub profile');
-                window.open('https://github.com/VaibhaviSugandhi1733', '_blank', 'noopener,noreferrer');
+                window.open('https://github.com/KaranVora17', '_blank', 'noopener,noreferrer');
               }}
               whileHover={{ 
                 scale: 1.05, 

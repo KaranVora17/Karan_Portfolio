@@ -181,16 +181,16 @@ const Hero = () => {
                   data-text="Karan Vora">
                   Karan Vora
                 </motion.h1>
-                <div className="command-line mt-2">
+                <div className="command-line mt-1">
                   <span className="text-green-400">$</span> cat /etc/profile
                 </div>
-                <motion.div className="h-16 md:h-20 flex items-start justify-start">
+                <motion.div className="h-auto flex items-start justify-start">
                   <h2 className="text-lg md:text-xl font-medium text-green-200 font-mono text-left">
                     <span className="typing-cursor strong-typing">{displayText}</span>
                   </h2>
                 </motion.div>
 
-                <div className="command-line mt-2">
+                <div className="command-line mt-1">
                   <span className="text-green-400">$</span> echo $MISSION
                 </div>
                 <motion.p

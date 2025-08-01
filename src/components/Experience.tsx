@@ -28,7 +28,7 @@ const Experience = () => {
                 ## Experience
               </h2>
               <p className="text-green-200 font-mono">
-                # My professional journey and hands-on roles
+                # My professional journey and hands-on roles...
               </p>
             </div>
           </div>
@@ -48,12 +48,12 @@ const Experience = () => {
                   <div className="flex items-center gap-3 mb-2">
                     <span className="text-2xl group-hover:animate-bounce transition-all"><Briefcase /></span>
                     <h4 className="font-semibold transition-all text-teal-300 group-hover:text-teal-100 group-active:text-teal-200 font-mono">
-                      DevOps Intern <span className="text-teal-400">@ LINUXWORLD PVT LTD</span>
+                      Vice President, Global SRE Lead for Sustainability & Climate <span className="text-teal-400">@ MSCI Inc.</span>
                     </h4>
                   </div>
-                  <div className="text-gray-400 text-sm mb-1 font-mono">January 2025 - Present</div>
+                  <div className="text-gray-400 text-sm mb-1 font-mono">January 2022 - Present</div>
                   <div className="text-gray-300 mb-2 font-mono">
-                    Currently working as a DevOps Intern, where I'm learning to automate deployments using Jenkins and Docker. I'm gaining hands-on experience with AWS, Ansible, and Linux server management. Actively exploring CI/CD workflows, infrastructure as code, and real-world problem-solving. Continuously improving my skills while contributing to team automation tasks and documentation.
+                    Accomplished Site Reliability Engineer (SRE) with experience in architecting and managing complex, mission-critical infrastructures across on-premises and multi-cloud environments like Microsoft Azure and Google Cloud Platform. Proven expertise in designing high-availability systems, implementing disaster recovery strategies and enabling SLA-driven reliability through automation using Bash, Shell, PowerShell, Azure CLI, GCloud CLI and Kubernetes. Adept at reducing operational toil and supporting auto-scaling of dynamic workloads through end-to-end automation, while strengthening observability, incident response and ITIL-compliant support practices. Demonstrated success in chaos engineering, failover validation and eliminating SPOFs to ensure resilient platform performance. Skilled in optimizing cloud costs through intelligent workload sizing, policy-driven data retention and proactive resource governance.
                   </div>
                 </div>
               </div>
