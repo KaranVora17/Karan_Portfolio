@@ -124,7 +124,7 @@ const Hero = () => {
               <div className="terminal-dot red"></div>
               <div className="terminal-dot yellow"></div>
               <div className="terminal-dot green"></div>
-              <span className="text-green-400 text-sm font-mono">karan@devops:~$</span>
+              <span className="text-green-400 text-sm font-mono">karan@sre:~$</span>
             </div>
             <div className="p-8 space-y-6">
               <div className="text-left space-y-6">
