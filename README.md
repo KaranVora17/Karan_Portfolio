@@ -1,29 +1,20 @@
-# 🚀 Personal DevOps Portfolio Website
 
-Welcome to my **personal portfolio website** — a showcase of my DevOps journey, skills, and projects. Built with the help of modern development tools and AI assistants like **[Bolt.New](https://bolt.new)** and **[Cursor](https://cursor.sh)**, this website reflects my commitment to learning and growing in the DevOps space.
+# 🚀 My SRE Portfolio
+Welcome to my technical portfolio site, a practical overview of my SRE expertise, workflows, and project history. This site was built using streamlined tools like Bolt.New and Cursor—demonstrating not only my fluency in modern development environments but also my commitment to continuous improvement and automation-driven engineering.
 
-🟢 **Live Website**: [https://vaibhavisugandhi.netlify.app/](https://vaibhavisugandhi.netlify.app/)
+🟢 Live Preview: https://karanvora.netlify.app/
 
----
+📌 Key Highlights:
+🎨 Responsive UI – Dark-mode optimized and mobile-ready.
+🧑‍💻 Profile Overview – Detailed breakdown of SRE skillsets.
+💼 Project Portfolio – Includes GitHub links to infrastructure implementations and real-world deployments.
+🔧 Tooling Stack – Featuring Tailwind CSS, HTML and AI-assisted development.
+🧠 Iterative Growth – Site evolves in parallel with my career in reliability engineering.
+📬 Contact Info – Direct links to LinkedIn and email for professional inquiries.
 
-## 📌 Features
-
-- 🎨 **Responsive Design** – Fully mobile-friendly and dark-themed
-- 🧑‍💻 **About Me & Skills** – Highlighting my core DevOps competencies
-- 💼 **Projects Section** – With GitHub links to real-world deployments
-- 🔧 **Technologies Used** – Tailwind CSS, HTML, AI-powered coding
-- 🧠 **Still Learning** – Continuously updated as I grow as a DevOps Engineer
-- 📬 **Contact Section** – Links to connect via GitHub, LinkedIn, and Email
-
----
-
-## 🛠️ Tech Stack
-
-- **Frontend**: HTML / Tailwind CSS / JavaScript  
-- **Built Using**: [Bolt.New](https://bolt.new) + [Cursor](https://cursor.sh)  
-- **Deployment**: Netlify  
-- **Icons**: Lucide  
-- **Hosting**: [Netlify](https://netlify.app)
-
-
-
+🛠️ Stack Overview:
+🌐 Frontend: HTML / Tailwind CSS / JavaScript
+⚡ AI-Powered Development: Bolt.New 🤖 + Cursor 🧠
+🚀 CI/CD & Deployment: Netlify 🔄
+🎨 UI Icons: Lucide Icons ✨
+☁️ Hosting Platform: Netlify 🌍
