@@ -4,22 +4,22 @@ import { useState } from 'react';
 const CONTACTS = [
   {
     label: 'Email',
-    value: 'vaibhavi.sugandh20@gmail.com',
+    value: 'vorakaran.17@gmail.com',
     icon: Mail,
-    href: 'mailto:vaibhavi.sugandh20@gmail.com',
+    href: 'mailto:vorakaran.17@gmail.com',
     copyable: true,
   },
   {
     label: 'LinkedIn',
-    value: 'linkedin.com/in/vaibhavi-sugandh',
+    value: 'linkedin.com/in/karanvora17',
     icon: ExternalLink,
-    href: 'https://linkedin.com/in/vaibhavi-sugandh',
+    href: 'https://linkedin.com/in/karanvora17',
   },
   {
     label: 'GitHub',
-    value: 'github.com/vaibhavi-sugandh',
+    value: 'github.com/KaranVora17',
     icon: Github,
-    href: 'https://github.com/vaibhavi-sugandh',
+    href: 'https://github.com/KaranVora17',
   },
 ];
 
