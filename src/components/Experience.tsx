@@ -105,15 +105,19 @@ const Experience = () => {
             </div>
             <div className="text-gray-400 text-sm font-mono">Jan 2022 – Present</div>
             <ul className="text-sm text-gray-300 space-y-1 font-mono">
-              <li># Led On-Prem to Azure & GCP migrations for scalability and resilience.</li>
-              <li># Orchestrated DR, backups, recovery with Chaos Studio & Vaults.</li>
-              <li># Reduced costs via scaling + GCP/Azure cost management APIs.</li>
-              <li># Provisioned infra with Terraform, Jenkins, GitHub Actions.</li>
-              <li># Built observability with Grafana, Prometheus, App Insights.</li>
+            <li>🛠️ Support & Incident Management: Spearheaded end-to-end support for ESG&C applications, ensuring high availability and performance across On-Prem, Azure, and GCP platforms.</li>
+            <li>☁️ Cloud Migration & Multi-Cloud Strategy: Led seamless migration from On-Prem to Azure and currently driving GCP transition for enhanced scalability, performance, and cost-efficiency.</li>
+            <li>🔄 Data Restoration & Recovery: Implemented robust backup and recovery strategies across Azure and GCP. Defined RPO and RTO for critical applications, leveraging Azure Backup Vault and GCP Snapshots for point-in-time data recovery.</li>
+            <li>🌪️ Disaster Recovery: Conducted annual DR planning and testing for ESG&C applications, ensuring business continuity across multi-cloud environments. Performed DR simulations using manual methods and Azure Chaos Studio for resilience validation.</li>
+            <li>📦 Cloud Data Management & Automation: Migrated TB's of data to cloud storage with automated policies for efficient and cost-effective data lifecycle management.</li>
+            <li>💰 Cloud Cost Optimization: Reduced cloud spend on Azure and GCP through auto-scaling and rightsizing strategies. Automated cost management with GCP Recommender API and Azure Cost Management tools. Implemented lean-time shutdown and scaling of infrastructure during weekends to further optimize costs.</li>
+            <li>🛠️ Infrastructure as Code: Provisioned cloud resources using Terraform, Azure CLI, and PowerShell. Automated CI/CD pipelines with Jenkins, TeamCity, and GitHub Actions for streamlined deployment.</li>
+            <li>🐳 Containerization & Deployment: Built and managed Docker containers, Kubernetes clusters, and Helm charts for seamless cloud-native application deployment.</li>
+            <li>📊 Monitoring & Observability: Built custom dashboards with Grafana and Prometheus for real-time performance monitoring. Integrated Azure Monitor, App Insights, DataDog, and Splunk for proactive issue detection and resolution.</li>
             </ul>
             <div className="mt-4 space-y-1 text-green-300 text-sm font-mono">
-              <div>🌐 Cloud & IaC: Azure, GCP, Terraform, Jenkins, GitHub Actions</div>
-              <div>📦 Containerization: Docker, Kubernetes, Helm</div>
+              <div>🌐 Cloud: Azure, GCP</div>
+              <div>📦 Containerization: AKS, GKE, Kubernetes</div>
               <div>📈 Monitoring: Grafana, Prometheus, App Insights, Splunk</div>
               <div>💰 Cost Optimization: GCP Recommender API, Azure Cost Management</div>
             </div>
