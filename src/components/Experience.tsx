@@ -10,11 +10,18 @@ const Experience = () => {
       company: "MSCI Inc.",
       period: "Jan 2017 – Dec 2021",
       points: [
-        "Provided Tier 2/3 support for MSCI Risk Analytics Products and ESG applications.",
-        "Built PROD-like environments using Solace, LDAP, Apache proxies, and Tomcats.",
-        "Led Lift-and-Shift cloud migration to Azure for operational scalability.",
-        "Implemented DR plans and 24x7 monitoring with Site24x7, Zabbix, and Netscaler.",
-        "Streamlined deployments with Git, TeamCity, and F5 load balancers."
+        "🛠️ Delivered Tier 2/3 support for MSCI Risk Analytics Products, ensuring optimal functionality and timely issue resolution.",
+        "🔗 Integrated and configured Solace into the Risk Metrics BlueBox application, enhancing system capabilities and inter-component communication.",
+        "🧪 Established a new PROD-like (STAGE) environment by deploying Solace, JMS, LDAP, Tomcats, and Apache proxies, ensuring production parity for testing.",
+        "🚀 Managed releases across Alpha, Stage, UAT, and PROD environments, ensuring stability, performance, and seamless deployment.",
+        "📈 Implemented AppDynamics for real-time application performance monitoring, providing end-to-end insights from code diagnostics to user experience.",
+        "🧭 Pioneered the creation of a 24x7 production support team for ESG applications, establishing end-to-end operational excellence and ensuring seamless support.",
+        "☁️ Led cloud infrastructure scaling for ESG, deploying technologies like TeamCity, Zabbix, Site24x7, Git, Netscaler, Citrix, and F5 load balancers for enhanced monitoring, automation, and load balancing.",
+        "🕒 Spearheaded implementation of 24x7 monitoring using Zabbix and Site24x7, ensuring high availability and rapid issue resolution across mission-critical systems.",
+        "🔄 Drove ITIL processes and managed release cycles, deployments, and disaster recovery (DR) strategies to ensure resiliency and business continuity.",
+        "✅ Successfully led the annual execution of Disaster Recovery (DR) plans for ESG suite, minimizing downtime and optimizing recovery processes in line with SLAs.",
+        "🚚 Spearheaded cloud migration strategies for ESG, including Lift-and-Shift to Azure and refactoring legacy applications from on-prem to cloud, optimizing for scalability and cost-efficiency.",
+        "🤝 Facilitated cross-functional collaboration, improving team workflows, standardizing communication protocols, and scaling operations efficiently to meet business demands."
       ],
       skills: "🛠️ Tools: Solace, AppDynamics, Git, TeamCity, F5, Zabbix, Site24x7"
     },
@@ -23,11 +30,11 @@ const Experience = () => {
       company: "MSCI Inc.",
       period: "Jan 2015 – Dec 2016",
       points: [
-        "Managed deployments across Alpha, UAT, and PROD on Windows/Linux.",
-        "Collaborated with cross-functional teams to streamline release workflows.",
-        "Resolved production incidents during on-call rotations.",
-        "Enabled automation and monitoring via JIRA, Splunk, and OpenNMS.",
-        "Analyzed and optimized release workflows using AppDynamics and OEM."
+        "⚙️ Ensured stability, performance, and successful deployment of financial applications across Alpha, UAT, and PROD environments on Windows and Unix/Linux systems.",
+        "🤝 Worked closely with Technology Service Operations, Infrastructure/Tech teams, Application Development, and Implementation Management for comprehensive environment maintenance and application releases.",
+        "🛠️ Provided 2nd/3rd level support for Managed Services and Technical Client Service teams, resolving complex issues and troubleshooting environment problems, including participation in on-call rotations for off-hours support.",
+        "🔍 Analyzed release workflows to identify areas for automation and optimization, collaborating with development and software testing teams to streamline processes.",
+        "🧰 Hands-on experience with Salesforce, JIRA, Eclipse, Splunk, Nagios, OpenNMS, Oracle Enterprise Manager (OEM), and AppDynamics, with strong adaptability to integrate new tools and applications."
       ],
       skills: "🔧 Platforms: Windows/Linux, AppDynamics, OEM, JIRA, Splunk"
     },
@@ -36,11 +43,12 @@ const Experience = () => {
       company: "MSCI Inc.",
       period: "Jan 2013 – Dec 2014",
       points: [
-        "Handled PROD/UAT releases for investment risk analytics applications.",
-        "Tested system architecture upgrades for performance & stability.",
-        "Improved reliability using ITIL practices and Apache/Tomcat.",
-        "Specialized in troubleshooting web apps and proxies.",
-        "Led platform optimization and system efficiency efforts."
+        "🖥️ Managed financial software applications across Windows, UNIX, and Linux environments, ensuring seamless operations and high availability in ALPHA, UAT, and PRODUCTION systems.",
+        "🚀 Executed application releases for PROD and UAT environments, including planned, critical, and emergency updates for investment risk analytics applications. Oversaw component promotion, library mapping, and deployment coordination with Application Development, Release Management, and QA teams.",
+        "🏗️ Tested and implemented system architecture changes to enhance stability, performance, and efficiency in distributed computing environments.",
+        "📘 Leveraged ITIL methodologies to streamline processes, close operational gaps, and safeguard live IT infrastructures.",
+        "🧩 Specialized in network/application troubleshooting, Apache Proxy/Tomcat, and WebSphere/WebLogic web applications.",
+        "🤝 Partnered with infrastructure teams for resource management, maintenance, and planned outages, while integrating emerging technology trends and solution architecture improvements to drive business excellence."
       ],
       skills: "⚙️ Technologies: Apache, Tomcat, ITIL, WebSphere, Linux"
     },
@@ -49,11 +57,11 @@ const Experience = () => {
       company: "MSCI Inc.",
       period: "Aug 2012 – Dec 2012",
       points: [
-        "Supported Risk Analytics tools like WealthBench and Managed Services.",
-        "Resolved L2 escalations for Ops/Client Services teams.",
-        "Managed system configurations and data refresh jobs.",
-        "Created Excel reports to optimize performance metrics.",
-        "Used Nagios, Splunk, OpenNMS & ServiceNow for monitoring."
+        "🛠️ Delivered Tier 2/3 technical support for proprietary MSCI Risk Analytics Products like Risk Manager, WealthBench and Managed Services.",
+        "🚨 Resolved escalations for Operations and Client Service teams, ensuring system stability and performance.",
+        "⚙️ Managed system configurations, daily data refresh jobs, and production resource allocation.",
+        "📊 Created Excel-based performance reports to optimize client runtimes and metrics.",
+        "🧰 Utilized tools like Nagios, Splunk, OpenNMS, and ServiceNow for monitoring and issue resolution."
       ],
       skills: "📊 Monitoring: Nagios, Splunk, OpenNMS, ServiceNow"
     }
@@ -144,7 +152,7 @@ const Experience = () => {
                 <div className="text-gray-400 text-sm font-mono">{exp.period}</div>
                 <ul className="text-xs text-gray-300 space-y-1 font-mono">
                   {exp.points.map((point, i) => (
-                    <li key={i}># {point}</li>
+                    <li key={i}>{point}</li>
                   ))}
                 </ul>
                 <div className="pt-2 text-xs text-green-300 font-mono">{exp.skills}</div>
