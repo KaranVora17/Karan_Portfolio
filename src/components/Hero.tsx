@@ -148,9 +148,7 @@ const Hero = () => {
                       <div className="profile-photo-bg">
                         <div className="profile-photo-inner">
                           {/* Profile Photo - Replace with your actual image */}
-                          <img 
-                            src="/profile-photo.jpg" 
-                            alt="Karan Vora" 
+                            <img src={`${import.meta.env.BASE_URL}profile-photo.jpg`} alt="Karan Vora"
                             className="w-full h-full object-cover rounded-full"
                             onError={(e) => {
                               // Fallback to placeholder if image fails to load
@@ -219,7 +217,7 @@ const Hero = () => {
               whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(34, 197, 94, 0.3)" }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 terminal-glass text-green-300 rounded font-semibold text-lg neon-border font-mono transition-all duration-300 flex items-center space-x-2"
-              href="/resume.pdf"
+              href={`${import.meta.env.BASE_URL}resume.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               download
