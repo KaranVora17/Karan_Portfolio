@@ -1,13 +1,11 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-const isGitHubPages = process.env.GITHUB_PAGES === 'true';
-
+// Switch base depending on build target
 export default defineConfig({
-  base: isGitHubPages ? "/Karan_Portfolio/" : "/",  // 👈 dynamic base
+  base: process.env.BUILD_TARGET === "gh-pages" ? "/Karan_Portfolio/" : "/",
   plugins: [react()],
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
 });
-
