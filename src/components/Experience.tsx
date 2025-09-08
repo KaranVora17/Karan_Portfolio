@@ -106,7 +106,7 @@ const Experience = () => {
         >
           <div className="creative-contact-card-inner p-6 space-y-4">
             <div className="flex items-center gap-3">
-              <img src={`${import.meta.env.BASE_URL}msci-logo.png`} alt="MSCI Logo" className="h-5" />
+              <img src={`${import.meta.env.BASE_URL}msci_logo.png`} alt="MSCI Logo" className="h-5" />
               <h4 className="font-semibold text-teal-300 font-mono text-base">
                 Vice President, Global SRE Lead <span className="text-teal-400">@ MSCI Inc.</span>
               </h4>
