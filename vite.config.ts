@@ -1,11 +1,13 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
+const isGitHubPages = process.env.GITHUB_PAGES === 'true';
+
 export default defineConfig({
-  base: "/Karan_Portfolio/",   // 👈 required for GitHub Pages
+  base: isGitHubPages ? "/Karan_Portfolio/" : "/",  // 👈 dynamic base
   plugins: [react()],
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
 });
+
