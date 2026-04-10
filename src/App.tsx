@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import KeyImpact from './components/KeyImpact';
 import About from './components/About';
 import Skills from './components/Skills';
 import Certifications from './components/Certifications';
@@ -10,18 +9,20 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 import AnimatedBackground from './components/AnimatedBackground';
 import Footer from './components/Footer';
+import KeyImpact from './components/KeyImpact';
+import { useTheme } from './hooks/useTheme';
 import './App.css';
 
 function App() {
+  const { theme, toggleTheme } = useTheme();
+
   return (
-    <div className="min-h-screen terminal-bg">
+    <div className="min-h-screen terminal-bg" data-theme={theme}>
       <AnimatedBackground />
-      {/* Matrix-style background effect */}
       <div className="matrix-bg">
         <div className="scan-line"></div>
       </div>
-      
-      <Header />
+      <Header toggleTheme={toggleTheme} theme={theme} />
       <main>
         <Hero />
         <KeyImpact />

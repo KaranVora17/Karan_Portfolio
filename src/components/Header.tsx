@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Github, Linkedin, Mail, Terminal } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail, Terminal, Sun, Moon } from 'lucide-react';
 import { motion, easeInOut } from 'framer-motion';
+import { Theme } from '../hooks/useTheme';
 
-const Header = () => {
+interface HeaderProps {
+  toggleTheme: () => void;
+  theme: Theme;
+}
+
+const Header = ({ toggleTheme, theme }: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -17,6 +23,7 @@ const Header = () => {
   const navItems = [
     { name: 'Home', href: '#hero' },
     { name: 'About', href: '#about' },
+    { name: 'Impact', href: '#impact' },
     { name: 'Skills', href: '#skills' },
     { name: 'Certifications', href: '#certifications' },
     { name: 'Projects', href: '#projects' },
@@ -30,9 +37,7 @@ const Header = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: easeInOut }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'terminal-glass shadow-lg'
-          : 'bg-transparent'
+        isScrolled ? 'terminal-glass shadow-lg' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -49,14 +54,14 @@ const Header = () => {
           </motion.a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            {navItems.map((item, index) => (
+          <nav className="hidden md:flex space-x-6">
+            {navItems.map((item) => (
               <motion.a
                 key={item.name}
                 href={item.href}
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className={`text-green-300 hover:text-green-400 transition-colors duration-200 font-mono command-prompt ${
+                className={`theme-nav-link transition-colors duration-200 font-mono text-sm command-prompt ${
                   item.name === 'Home' ? 'home-link' : ''
                 }`}
               >
@@ -65,15 +70,15 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Social Links */}
-          <div className="hidden md:flex items-center space-x-4">
+          {/* Social Links + Theme Toggle */}
+          <div className="hidden md:flex items-center space-x-3">
             <motion.a
               href="https://github.com/KaranVora17"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, rotate: 5 }}
               whileTap={{ scale: 0.9 }}
-              className="text-green-300 hover:text-green-400 transition-colors duration-200 glow-effect p-2 rounded"
+              className="theme-icon-link glow-effect p-2 rounded transition-colors duration-200"
             >
               <Github size={20} />
             </motion.a>
@@ -83,7 +88,7 @@ const Header = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, rotate: 5 }}
               whileTap={{ scale: 0.9 }}
-              className="text-green-300 hover:text-green-400 transition-colors duration-200 glow-effect p-2 rounded"
+              className="theme-icon-link glow-effect p-2 rounded transition-colors duration-200"
             >
               <Linkedin size={20} />
             </motion.a>
@@ -91,21 +96,51 @@ const Header = () => {
               href="mailto:vorakaran.17@gmail.com"
               whileHover={{ scale: 1.1, rotate: 5 }}
               whileTap={{ scale: 0.9 }}
-              className="text-green-300 hover:text-green-400 transition-colors duration-200 glow-effect p-2 rounded"
+              className="theme-icon-link glow-effect p-2 rounded transition-colors duration-200"
             >
               <Mail size={20} />
             </motion.a>
+
+            {/* Theme Toggle Button */}
+            <motion.button
+              onClick={toggleTheme}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="theme-toggle-btn p-2 rounded-full border transition-all duration-300 ml-2"
+              title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+            >
+              {theme === 'dark' ? (
+                <Sun size={18} className="text-yellow-400" />
+              ) : (
+                <Moon size={18} className="text-indigo-600" />
+              )}
+            </motion.button>
           </div>
 
           {/* Mobile Menu Button */}
-          <motion.button
-            className="md:hidden text-green-300 hover:text-green-400 transition-colors duration-200"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </motion.button>
+          <div className="md:hidden flex items-center space-x-2">
+            {/* Mobile Theme Toggle */}
+            <motion.button
+              onClick={toggleTheme}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="theme-toggle-btn p-2 rounded-full border transition-all duration-300"
+            >
+              {theme === 'dark' ? (
+                <Sun size={16} className="text-yellow-400" />
+              ) : (
+                <Moon size={16} className="text-indigo-600" />
+              )}
+            </motion.button>
+            <motion.button
+              className="theme-nav-link transition-colors duration-200"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </motion.button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -131,7 +166,7 @@ const Header = () => {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1, duration: 0.3 }}
-                  className="text-green-300 hover:text-green-400 transition-colors duration-200 font-mono command-prompt py-2"
+                  className="theme-nav-link transition-colors duration-200 font-mono command-prompt py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name.toLowerCase()}
@@ -143,7 +178,7 @@ const Header = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
-                  className="text-green-300 hover:text-green-400 transition-colors duration-200"
+                  className="theme-icon-link transition-colors duration-200"
                 >
                   <Github size={20} />
                 </motion.a>
@@ -152,14 +187,14 @@ const Header = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
-                  className="text-green-300 hover:text-green-400 transition-colors duration-200"
+                  className="theme-icon-link transition-colors duration-200"
                 >
                   <Linkedin size={20} />
                 </motion.a>
                 <motion.a
                   href="mailto:vorakaran.17@gmail.com"
                   whileHover={{ scale: 1.1 }}
-                  className="text-green-300 hover:text-green-400 transition-colors duration-200"
+                  className="theme-icon-link transition-colors duration-200"
                 >
                   <Mail size={20} />
                 </motion.a>
