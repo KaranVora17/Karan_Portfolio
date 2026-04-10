@@ -983,6 +983,31 @@
      color: #1e3a5f !important;
    }
    
+   /* Contact form specific counter fix */
+   [data-theme="light"] span.text-green-400,
+   [data-theme="light"] p.text-green-400,
+   [data-theme="light"] div.text-green-400,
+   [data-theme="light"] .text-green-400\/60 {
+     color: #64748b !important;
+   }
+   
+   /* ── Verified badge alignment fix ── */
+   .creative-contact-card-inner .flex.items-center.gap-3 {
+     flex-wrap: wrap;
+     align-items: flex-start;
+   }
+   
+   .creative-contact-card-inner .flex.items-center.gap-3 h4 {
+     flex: 1;
+     min-width: 0;
+   }
+   
+   .creative-contact-card-inner .flex.items-center.gap-3 span.ml-2 {
+     flex-shrink: 0;
+     white-space: nowrap;
+     align-self: flex-start;
+   }
+   
    /* ── Neon border → navy in light mode ── */
    [data-theme="light"] .neon-border {
      border-color: #1e3a5f !important;
