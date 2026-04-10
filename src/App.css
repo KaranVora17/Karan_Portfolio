@@ -958,6 +958,37 @@
      display: none !important;
    }
    
+   /* ── Header logo ── */
+   [data-theme="light"] .logo-link .bg-gradient-to-r {
+     background: linear-gradient(to right, #1e3a5f, #2563eb) !important;
+   }
+   
+   [data-theme="light"] .gradient-text {
+     background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%) !important;
+     -webkit-background-clip: text !important;
+     background-clip: text !important;
+     -webkit-text-fill-color: transparent !important;
+   }
+   
+   /* ── Green buttons → navy in light mode ── */
+   [data-theme="light"] .bg-gradient-to-r.from-green-500,
+   [data-theme="light"] button.bg-gradient-to-r {
+     background: linear-gradient(to right, #1e3a5f, #2563eb) !important;
+     color: white !important;
+   }
+   
+   /* ── Character counters and small green text ── */
+   [data-theme="light"] .text-green-400,
+   [data-theme="light"] .text-green-500 {
+     color: #1e3a5f !important;
+   }
+   
+   /* ── Neon border → navy in light mode ── */
+   [data-theme="light"] .neon-border {
+     border-color: #1e3a5f !important;
+     box-shadow: 0 0 8px rgba(30, 58, 95, 0.2) !important;
+   }
+   
    /* Links */
    [data-theme="light"] a {
      color: inherit;
