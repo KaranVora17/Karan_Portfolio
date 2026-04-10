@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion, easeInOut } from 'framer-motion';
 import './Contact.css';
@@ -9,59 +8,54 @@ const Experience = () => {
       title: "Senior Associate",
       company: "MSCI Inc.",
       period: "Jan 2017 – Dec 2021",
+      intro: "Progressed from RiskMetrics Application Management to founding member of ESG team — growing from a 4-member support function to a 15-member SRE team with 24x7 production coverage.",
       points: [
-        "🛠️ Delivered Tier 2/3 support for MSCI Risk Analytics Products, ensuring optimal functionality and timely issue resolution.",
-        "🔗 Integrated and configured Solace into the Risk Metrics BlueBox application, enhancing system capabilities and inter-component communication.",
-        "🧪 Established a new PROD-like (STAGE) environment by deploying Solace, JMS, LDAP, Tomcats, and Apache proxies, ensuring production parity for testing.",
-        "🚀 Managed releases across Alpha, Stage, UAT, and PROD environments, ensuring stability, performance, and seamless deployment.",
-        "📈 Implemented AppDynamics for real-time application performance monitoring, providing end-to-end insights from code diagnostics to user experience.",
-        "🧭 Pioneered the creation of a 24x7 production support team for ESG applications, establishing end-to-end operational excellence and ensuring seamless support.",
-        "☁️ Led cloud infrastructure scaling for ESG, deploying technologies like TeamCity, Zabbix, Site24x7, Git, Netscaler, Citrix, and F5 load balancers for enhanced monitoring, automation, and load balancing.",
-        "🕒 Spearheaded implementation of 24x7 monitoring using Zabbix and Site24x7, ensuring high availability and rapid issue resolution across mission-critical systems.",
-        "🔄 Drove ITIL processes and managed release cycles, deployments, and disaster recovery (DR) strategies to ensure resiliency and business continuity.",
-        "✅ Successfully led the annual execution of Disaster Recovery (DR) plans for ESG suite, minimizing downtime and optimizing recovery processes in line with SLAs.",
-        "🚚 Spearheaded cloud migration strategies for ESG, including Lift-and-Shift to Azure and refactoring legacy applications from on-prem to cloud, optimizing for scalability and cost-efficiency.",
-        "🤝 Facilitated cross-functional collaboration, improving team workflows, standardizing communication protocols, and scaling operations efficiently to meet business demands."
+        "🖥️ RiskMetrics — Application Management: Independently owned Tier 2/3 support across 1,000+ Windows and Linux servers for MSCI Risk Analytics platforms — resolving complex production issues and mentoring junior team members.",
+        "🏗️ Environment Engineering: Built a production-parity STAGE environment from scratch — enabling reliable pre-production testing through proper configuration of middleware, proxies and messaging systems.",
+        "🚀 ESG — Team & Operations Foundation: Among the founding members of the ESG Application Management team — establishing 24x7 support coverage, defining operational processes and embedding end-to-end ownership.",
+        "☁️ Cloud Migration & Infrastructure Scaling: Led Lift-and-Shift migrations from On-Prem to Azure — scaling infrastructure to support rapid growth of ESG platforms while maintaining stability.",
+        "📊 Monitoring & Observability: Implemented 24x7 monitoring and alerting — improving system visibility and enabling faster detection and resolution before issues escalate.",
+        "🔄 Release & Change Management: Owned and continuously improved release cycles across environments — identifying process gaps, driving ITIL-compliant improvements and ensuring controlled, stable deployments.",
+        "🛡️ Disaster Recovery: Led DR planning and execution for ESG platforms across on-premise environments — establishing foundational recovery procedures and validating business continuity ahead of cloud migration."
       ],
-      skills: "🛠️ Tools: Solace, AppDynamics, Git, TeamCity, F5, Zabbix, Site24x7"
+      skills: "🛠️ Tools: Azure, Zabbix, Site24x7, F5, Citrix, TeamCity, Git, AppDynamics"
     },
     {
       title: "Associate",
       company: "MSCI Inc.",
       period: "Jan 2015 – Dec 2016",
+      intro: "Deepened hands-on expertise across RiskMetrics application management — building foundational knowledge of systems at scale and release engineering.",
       points: [
-        "⚙️ Ensured stability, performance, and successful deployment of financial applications across Alpha, UAT, and PROD environments on Windows and Unix/Linux systems.",
-        "🤝 Worked closely with Technology Service Operations, Infrastructure/Tech teams, Application Development, and Implementation Management for comprehensive environment maintenance and application releases.",
-        "🛠️ Provided 2nd/3rd level support for Managed Services and Technical Client Service teams, resolving complex issues and troubleshooting environment problems, including participation in on-call rotations for off-hours support.",
-        "🔍 Analyzed release workflows to identify areas for automation and optimization, collaborating with development and software testing teams to streamline processes.",
-        "🧰 Hands-on experience with Salesforce, JIRA, Eclipse, Splunk, Nagios, OpenNMS, Oracle Enterprise Manager (OEM), and AppDynamics, with strong adaptability to integrate new tools and applications."
+        "⚙️ Application Support & Stability: Independently managed Tier 2/3 support across RiskMetrics financial applications — owning production issue resolution, environment troubleshooting and on-call responsibilities across Windows and Unix/Linux systems.",
+        "🚀 Release & Deployment Engineering: Executed and refined application release and deployment processes across Alpha, UAT and Production — identifying automation opportunities and collaborating with development and QA teams.",
+        "🤝 Cross-functional Collaboration: Partnered across Technology Operations, Infrastructure, Application Development and Implementation Management — developing a broad understanding of how large-scale financial systems are built, maintained and operated.",
+        "🔔 On-call & Incident Response: Took full ownership of on-call rotations — building early discipline around incident response, troubleshooting and rapid issue resolution under pressure.",
+        "🧰 Tooling & Systems Mastery: Expanded hands-on experience across enterprise monitoring, application management and ITSM tooling — building adaptability and a strong foundation for working across complex, multi-component environments."
       ],
-      skills: "🔧 Platforms: Windows/Linux, AppDynamics, OEM, JIRA, Splunk"
+      skills: "🔧 Platforms: Windows/Linux, AppDynamics, OEM, JIRA, Splunk, ServiceNow"
     },
     {
       title: "Analyst",
       company: "MSCI Inc.",
       period: "Jan 2013 – Dec 2014",
+      intro: "Built foundational expertise in application management and release engineering across RiskMetrics platforms.",
       points: [
-        "🖥️ Managed financial software applications across Windows, UNIX, and Linux environments, ensuring seamless operations and high availability in ALPHA, UAT, and PRODUCTION systems.",
-        "🚀 Executed application releases for PROD and UAT environments, including planned, critical, and emergency updates for investment risk analytics applications. Oversaw component promotion, library mapping, and deployment coordination with Application Development, Release Management, and QA teams.",
-        "🏗️ Tested and implemented system architecture changes to enhance stability, performance, and efficiency in distributed computing environments.",
-        "📘 Leveraged ITIL methodologies to streamline processes, close operational gaps, and safeguard live IT infrastructures.",
-        "🧩 Specialized in network/application troubleshooting, Apache Proxy/Tomcat, and WebSphere/WebLogic web applications.",
-        "🤝 Partnered with infrastructure teams for resource management, maintenance, and planned outages, while integrating emerging technology trends and solution architecture improvements to drive business excellence."
+        "🖥️ Application Management & Stability: Executed application management tasks across Windows and Unix/Linux environments under close guidance — learning production operations, system configurations and issue resolution across Alpha, UAT and Production systems.",
+        "🚀 Release & Deployment: Participated in and executed planned, critical and emergency application deployments across PROD and UAT — coordinating with development, release management and QA teams.",
+        "🏗️ System Architecture & Performance: Assisted in testing and implementing system architecture changes — developing early instincts for distributed computing, performance tuning and operational efficiency.",
+        "🤝 Cross-functional Learning: Collaborated across infrastructure, application development and release management teams — rapidly building adaptability, technical breadth and a strong operational foundation."
       ],
-      skills: "⚙️ Technologies: Apache, Tomcat, ITIL, WebSphere, Linux"
+      skills: "⚙️ Technologies: Apache, Tomcat, ITIL, WebSphere, Linux, Windows"
     },
     {
-      title: "Intern / Trainee",
+      title: "Trainee",
       company: "MSCI Inc.",
       period: "Aug 2012 – Dec 2012",
+      intro: "First exposure to enterprise application management at MSCI — learning fundamentals of production support, system operations and client escalation handling.",
       points: [
-        "🛠️ Delivered Tier 2/3 technical support for proprietary MSCI Risk Analytics Products like Risk Manager, WealthBench and Managed Services.",
-        "🚨 Resolved escalations for Operations and Client Service teams, ensuring system stability and performance.",
-        "⚙️ Managed system configurations, daily data refresh jobs, and production resource allocation.",
-        "📊 Created Excel-based performance reports to optimize client runtimes and metrics.",
-        "🧰 Utilized tools like Nagios, Splunk, OpenNMS, and ServiceNow for monitoring and issue resolution."
+        "🛠️ Production Support & Operations: Delivered Tier 1/2 support across RiskMetrics platforms — managing system configurations, daily data refresh jobs and production resources while resolving escalations for Operations and Client Service teams.",
+        "📊 Monitoring & Operations: Utilised enterprise monitoring tools to track system health, manage production resources and ensure daily operational stability across mission-critical environments.",
+        "🏁 Foundation Building: Gained early exposure to large-scale financial systems, ITSM practices and production operations — establishing the technical and operational foundation for a decade-long career in infrastructure and reliability engineering."
       ],
       skills: "📊 Monitoring: Nagios, Splunk, OpenNMS, ServiceNow"
     }
@@ -91,7 +85,7 @@ const Experience = () => {
                 ## Experience
               </h2>
               <p className="text-green-200 font-mono">
-                # My professional journey and hands-on roles...
+                # A decade+ of building, breaking, fixing and scaling infrastructure...
               </p>
             </div>
           </div>
@@ -108,35 +102,55 @@ const Experience = () => {
             <div className="flex items-center gap-3">
               <img src={`${import.meta.env.BASE_URL}msci_logo.png`} alt="MSCI Logo" className="h-5" />
               <h4 className="font-semibold text-teal-300 font-mono text-base">
-                Vice President, Global SRE Lead <span className="text-teal-400">@ MSCI Inc.</span>
+                Vice President, Site Reliability Engineering <span className="text-teal-400">@ MSCI Inc.</span>
               </h4>
             </div>
             <div className="text-gray-400 text-sm font-mono">Jan 2022 – Present</div>
-            <ul className="text-sm text-gray-300 space-y-1 font-mono">
-            <li>🛠️ Support & Incident Management: Spearheaded end-to-end support for ESG&C applications, ensuring high availability and performance across On-Prem, Azure, and GCP platforms.</li>
-            <li>☁️ Cloud Migration & Multi-Cloud Strategy: Led seamless migration from On-Prem to Azure and currently driving GCP transition for enhanced scalability, performance, and cost-efficiency.</li>
-            <li>🔄 Data Restoration & Recovery: Implemented robust backup and recovery strategies across Azure and GCP. Defined RPO and RTO for critical applications, leveraging Azure Backup Vault and GCP Snapshots for point-in-time data recovery.</li>
-            <li>🌪️ Disaster Recovery: Conducted annual DR planning and testing for ESG&C applications, ensuring business continuity across multi-cloud environments. Performed DR simulations using manual methods and Azure Chaos Studio for resilience validation.</li>
-            <li>📦 Cloud Data Management & Automation: Migrated TB's of data to cloud storage with automated policies for efficient and cost-effective data lifecycle management.</li>
-            <li>💰 Cloud Cost Optimization: Reduced cloud spend on Azure and GCP through auto-scaling and rightsizing strategies. Automated cost management with GCP Recommender API and Azure Cost Management tools. Implemented lean-time shutdown and scaling of infrastructure during weekends to further optimize costs.</li>
-            <li>🛠️ Infrastructure as Code: Provisioned cloud resources using Terraform, Azure CLI, and PowerShell. Automated CI/CD pipelines with Jenkins, TeamCity, and GitHub Actions for streamlined deployment.</li>
-            <li>🐳 Containerization & Deployment: Built and managed Docker containers, Kubernetes clusters, and Helm charts for seamless cloud-native application deployment.</li>
-            <li>📊 Monitoring & Observability: Built custom dashboards with Grafana and Prometheus for real-time performance monitoring. Integrated Azure Monitor, App Insights, DataDog, and Splunk for proactive issue detection and resolution.</li>
+            <p className="text-gray-300 text-sm font-mono italic">
+              Leading global SRE for Sustainability & Climate applications at MSCI — owning reliability and operational excellence across hybrid environments spanning On-Prem, Azure and GCP.
+            </p>
+
+            {/* Key Metrics */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 py-2">
+              {[
+                { value: '99%+', label: 'Uptime' },
+                { value: '20%↓', label: 'MTTR Reduction' },
+                { value: '30%↓', label: 'Toil Reduction' },
+                { value: '6-fig', label: 'Cloud Savings' },
+              ].map((metric, i) => (
+                <div key={i} className="bg-black/40 rounded-lg p-2 text-center border border-green-900">
+                  <div className="text-green-300 font-bold font-mono text-sm">{metric.value}</div>
+                  <div className="text-gray-400 font-mono text-xs mt-1">{metric.label}</div>
+                </div>
+              ))}
+            </div>
+
+            <ul className="text-sm text-gray-300 space-y-2 font-mono">
+              <li>👥 <b>Team Leadership:</b> Built, scaled and mentored a 15-member global SRE team across six locations — driving accountability, technical growth and end-to-end problem ownership.</li>
+              <li>🚨 <b>Incident Management & Reliability:</b> Led incident response, on-call practices and RCA discipline across 20+ applications — reducing MTTR by 20% and incident volume by 10% YoY through post-mortem practices and proactive reliability engineering.</li>
+              <li>🖥️ <b>Infrastructure & Scale:</b> Managed hybrid cloud infrastructure spanning 100+ VMs, 30 AKS/GKE clusters and PaaS databases (Cosmos DB, PostgreSQL, Cloud SQL) — processing 3,500+ PagerDuty alerts monthly.</li>
+              <li>☁️ <b>Cloud Migration, DR & Resilience:</b> Drove On-Prem to hybrid cloud migrations on Azure and GCP — delivering resilient infrastructure with automated failovers, chaos engineering validation and tested disaster recovery execution.</li>
+              <li>📊 <b>Observability & Monitoring:</b> Built enterprise observability platforms enabling real-time telemetry, proactive alerting and rapid root cause analysis — giving teams visibility to act before issues escalate.</li>
+              <li>💰 <b>Cloud Cost Optimization:</b> Delivered six-figure annual savings through right-sizing, auto-scaling and lean scheduling — treating cost efficiency as an engineering discipline, not an afterthought.</li>
+              <li>⚙️ <b>Automation & Platform Engineering:</b> Drove infrastructure automation from toil elimination through scripting to Kubernetes workload management — reducing operational toil by 30%.</li>
+              <li>🔒 <b>Security & Compliance:</b> Maintained audit-ready infrastructure — supporting SOC audits and ESMA regulatory requirements through evidence coordination, access controls and data governance.</li>
+              <li>🔄 <b>Change Management & Cross-functional Delivery:</b> Owned change management across all environments — partnering across engineering, product and infrastructure to standardise processes and ensure seamless global releases.</li>
             </ul>
-            <div className="mt-4 space-y-1 text-green-300 text-sm font-mono">
+
+            <div className="mt-4 grid grid-cols-2 gap-2 text-green-300 text-sm font-mono">
               <div>🌐 Cloud: Azure, GCP</div>
-              <div>📦 Containerization: AKS, GKE, Kubernetes</div>
-              <div>📈 Monitoring: Grafana, Prometheus, App Insights, Splunk</div>
-              <div>💰 Cost Optimization: GCP Recommender API, Azure Cost Management</div>
+              <div>📦 Containers: AKS, GKE, Kubernetes</div>
+              <div>📈 Monitoring: Grafana, Prometheus, Datadog, Splunk</div>
+              <div>💰 Cost: GCP Recommender API, Azure Cost Management</div>
             </div>
           </div>
         </motion.div>
 
-          {/* Spacer */}
-          <div className="h-0"></div>  {/* Adds ~2.5rem of vertical space */}
+        {/* Spacer */}
+        <div className="h-0"></div>
 
-          {/* 2x2 Experience Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* 2x2 Experience Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {experiences.map((exp, idx) => (
             <motion.div
               key={idx}
@@ -150,7 +164,8 @@ const Experience = () => {
                   {exp.title} <span className="text-teal-400">@ {exp.company}</span>
                 </h4>
                 <div className="text-gray-400 text-sm font-mono">{exp.period}</div>
-                <ul className="text-xs text-gray-300 space-y-1 font-mono">
+                <p className="text-gray-400 text-xs font-mono italic">{exp.intro}</p>
+                <ul className="text-xs text-gray-300 space-y-2 font-mono">
                   {exp.points.map((point, i) => (
                     <li key={i}>{point}</li>
                   ))}

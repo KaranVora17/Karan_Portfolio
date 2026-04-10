@@ -6,10 +6,10 @@ import {
   GitBranch, 
   Cloud, 
   Settings, 
-  Workflow, 
   Container,
-  Cpu,
-  Database
+  Database,
+  Shield,
+  Activity
 } from 'lucide-react';
 import { motion, easeInOut } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -20,57 +20,91 @@ const Skills = () => {
     threshold: 0.1
   });
 
-    const skillCategories = [
-            {
-        category: "Cloud",
-        icon: <Cloud className="text-green-300" size={24} />,
-        skills: [
-          { name: "Azure", level: 80, command: "az account show" },
-          { name: "GCP", level: 70, command: "gcloud info" },
-          { name: "AWS", level: 50, command: "aws s3 ls" }
-        ]
-      },
-      {
-        category: "OS",
-        icon: <Terminal className="text-green-400" size={24} />,
-        skills: [
-          { name: "Windows", level: 90, command: "systeminfo" },
-          { name: "Linux", level: 90, command: "uname -a" }
-        ]
-      },
-      {
-        category: "Languages",
-        icon: <Code className="text-green-300" size={24} />,
-        skills: [
-          { name: "Shell", level: 80, command: "sh --version" },
-          { name: "PowerShell", level: 70, command: "Get-Host" }
-        ]
-      },
-      {
-        category: "Version Control",
-        icon: <GitBranch className="text-green-400" size={24} />,
-        skills: [
-          { name: "Git", level: 85, command: "git status" },
-          { name: "GitHub", level: 80, command: "gh repo list" }
-        ]
-      },
-      {
-        category: "Containerization",
-        icon: <Container className="text-green-400" size={24} />,
-        skills: [
-          { name: "Kubernetes", level: 90, command: "kubectl get pods" },
-          { name: "Docker", level: 70, command: "docker ps" }
-        ]
-      },
-      {
-        category: "Config Mgmt",
-        icon: <Settings className="text-green-500" size={24} />,
-        skills: [
-          { name: "Ansible", level: 75, command: "ansible-playbook deploy.yml" }
-        ]
-      }
-    ];
-  
+  const skillCategories = [
+    {
+      category: "Cloud Platforms",
+      icon: <Cloud className="text-green-300" size={24} />,
+      skills: [
+        { name: "Microsoft Azure", level: 85, command: "az account show" },
+        { name: "Google Cloud Platform", level: 75, command: "gcloud info" },
+        { name: "AWS", level: 50, command: "aws s3 ls" }
+      ]
+    },
+    {
+      category: "OS & Infrastructure",
+      icon: <Terminal className="text-green-400" size={24} />,
+      skills: [
+        { name: "Linux", level: 90, command: "uname -a" },
+        { name: "Windows Server", level: 90, command: "systeminfo" }
+      ]
+    },
+    {
+      category: "Containers & IaC",
+      icon: <Container className="text-green-400" size={24} />,
+      skills: [
+        { name: "Kubernetes", level: 85, command: "kubectl get pods -A" },
+        { name: "Docker", level: 80, command: "docker ps" },
+        { name: "Terraform", level: 75, command: "terraform plan" }
+      ]
+    },
+    {
+      category: "Observability",
+      icon: <Activity className="text-green-300" size={24} />,
+      skills: [
+        { name: "Grafana & Prometheus", level: 85, command: "prometheus --version" },
+        { name: "Datadog", level: 80, command: "datadog-agent status" },
+        { name: "Splunk", level: 80, command: "splunk status" },
+        { name: "AppDynamics", level: 75, command: "appdynamics status" }
+      ]
+    },
+    {
+      category: "Scripting & Automation",
+      icon: <Code className="text-green-300" size={24} />,
+      skills: [
+        { name: "Shell / Bash", level: 85, command: "bash --version" },
+        { name: "PowerShell", level: 80, command: "Get-Host" },
+        { name: "Azure CLI", level: 80, command: "az --version" },
+        { name: "gcloud CLI", level: 75, command: "gcloud --version" }
+      ]
+    },
+    {
+      category: "Security & Compliance",
+      icon: <Shield className="text-green-400" size={24} />,
+      skills: [
+        { name: "SOC Audit Support", level: 80, command: "cat compliance-report.txt" },
+        { name: "ITIL Practices", level: 90, command: "cat itil-framework.txt" },
+        { name: "ESMA Compliance", level: 75, command: "cat esma-guidelines.txt" }
+      ]
+    },
+    {
+      category: "Version Control & CI",
+      icon: <GitBranch className="text-green-400" size={24} />,
+      skills: [
+        { name: "Git / GitHub", level: 85, command: "git status" },
+        { name: "Jenkins", level: 75, command: "jenkins --version" },
+        { name: "TeamCity", level: 75, command: "teamcity --version" }
+      ]
+    },
+    {
+      category: "Databases & Storage",
+      icon: <Database className="text-green-300" size={24} />,
+      skills: [
+        { name: "Oracle SQL", level: 75, command: "sqlplus --version" },
+        { name: "Cosmos DB", level: 70, command: "az cosmosdb show" },
+        { name: "PostgreSQL / Cloud SQL", level: 70, command: "psql --version" }
+      ]
+    },
+    {
+      category: "ITSM & Networking",
+      icon: <Settings className="text-green-500" size={24} />,
+      skills: [
+        { name: "ServiceNow / JIRA", level: 85, command: "servicenow --status" },
+        { name: "F5 Load Balancer", level: 80, command: "tmsh show sys version" },
+        { name: "Citrix NetScaler", level: 75, command: "nsconmsg -d current" }
+      ]
+    }
+  ];
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -144,7 +178,7 @@ const Skills = () => {
                   ## Technical Skills
                 </h2>
                 <p className="text-green-200 font-mono">
-                  # Proficiency levels across various technologies and tools..
+                  # Proficiency levels across cloud, infrastructure, observability and automation..
                 </p>
               </div>
             </div>
@@ -169,7 +203,7 @@ const Skills = () => {
                   <div className="terminal-dot yellow group-hover:animate-pulse"></div>
                   <div className="terminal-dot green group-hover:animate-pulse"></div>
                   <span className="text-green-400 text-sm font-mono group-hover:text-green-300 transition-colors duration-300">
-                    {category.category.toLowerCase()}
+                    {category.category.toLowerCase().replace(/ /g, '_')}
                   </span>
                 </div>
                 <div className="p-6 space-y-6 group-hover:bg-black/30 transition-all duration-300">
@@ -282,7 +316,7 @@ const Skills = () => {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1.2, duration: 0.8 }}
                 >
-                  Continuously deepening expertise in systems reliability, distributed architecture, and cloud-native technologies through practical application, advanced certifications, and real-world scalability challenges. Focused on adopting emerging tools, automation frameworks, and observability practices to optimize performance and resilience in complex production environments.
+                  Backed by certifications across Google Cloud, Microsoft Azure, ITIL and AppDynamics — and a foundation built on Linux, Hardware and Networking — I bring both strategic perspective and hands-on depth to every challenge. Continuously deepening expertise across cloud-native technologies, observability platforms and automation frameworks to build resilient, scalable and cost-efficient systems.
                 </motion.p>
               </div>
             </motion.div>

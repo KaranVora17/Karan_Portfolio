@@ -88,7 +88,7 @@ const Header = () => {
               <Linkedin size={20} />
             </motion.a>
             <motion.a
-              href="mailto:vorakaran.17@email.com"
+              href="mailto:vorakaran.17@gmail.com"
               whileHover={{ scale: 1.1, rotate: 5 }}
               whileTap={{ scale: 0.9 }}
               className="text-green-300 hover:text-green-400 transition-colors duration-200 glow-effect p-2 rounded"
@@ -157,7 +157,7 @@ const Header = () => {
                   <Linkedin size={20} />
                 </motion.a>
                 <motion.a
-                  href="mailto:vorakaran.17@email.com"
+                  href="mailto:vorakaran.17@gmail.com"
                   whileHover={{ scale: 1.1 }}
                   className="text-green-300 hover:text-green-400 transition-colors duration-200"
                 >

@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import KeyImpact from './components/KeyImpact';
 import About from './components/About';
 import Skills from './components/Skills';
 import Certifications from './components/Certifications';
@@ -23,6 +24,7 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <KeyImpact />
         <About />
         <Skills />
         <Certifications />

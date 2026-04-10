@@ -2,13 +2,10 @@ import { useState, useEffect, useRef } from 'react';
 import { ChevronDown, Download, ArrowRight, Server, Cloud, Code, GitBranch, Terminal, Cpu } from 'lucide-react';
 import { motion, easeInOut } from 'framer-motion';
 
-// Alternative: Import photo as asset (uncomment and add your photo to src/assets/)
-// import profilePhoto from '../assets/profile-photo.jpg';
-
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const fullText = 'Karan Vora - Site Reliability Engineer | Vice President at MSCI Inc.';
+  const fullText = 'Vice President, Site Reliability Engineering | Global S&C SRE Leader @ MSCI Inc.';
   useEffect(() => {
     if (currentIndex < fullText.length) {
       const timeout = setTimeout(() => {
@@ -129,7 +126,7 @@ const Hero = () => {
             <div className="p-8 space-y-6">
               <div className="text-left space-y-6">
                 {/* Profile Photo Section */}
-                <motion.div 
+                <motion.div
                   className="flex justify-center mb-8"
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -138,8 +135,8 @@ const Hero = () => {
                   <div className="profile-photo-container relative">
                     <motion.div
                       className="profile-photo-frame"
-                      whileHover={{ 
-                        scale: 1.05, 
+                      whileHover={{
+                        scale: 1.05,
                         rotate: 2,
                         boxShadow: "0 0 30px rgba(34, 197, 94, 0.6)"
                       }}
@@ -147,18 +144,15 @@ const Hero = () => {
                     >
                       <div className="profile-photo-bg">
                         <div className="profile-photo-inner">
-                          {/* Profile Photo - Replace with your actual image */}
-                            <img src={`${import.meta.env.BASE_URL}profile-photo.jpg`} alt="Karan Vora"
+                          <img src={`${import.meta.env.BASE_URL}profile-photo.jpg`} alt="Karan Vora"
                             className="w-full h-full object-cover rounded-full"
                             onError={(e) => {
-                              // Fallback to placeholder if image fails to load
                               const target = e.target as HTMLImageElement;
                               target.style.display = 'none';
                               const placeholder = target.parentElement?.querySelector('.profile-photo-placeholder') as HTMLElement;
                               if (placeholder) placeholder.style.display = 'flex';
                             }}
                           />
-                          
                           {/* Fallback placeholder */}
                           <div className="profile-photo-placeholder" style={{ display: 'none' }}>
                             <Terminal size={60} className="text-green-400" />
@@ -174,7 +168,7 @@ const Hero = () => {
                 <div className="command-line">
                   <span className="text-green-400">$</span> whoami
                 </div>
-                <motion.h1 
+                <motion.h1
                   className="text-4xl md:text-7xl font-bold text-green-300 font-mono hero-glow"
                   data-text="Karan Vora">
                   Karan Vora
@@ -194,10 +188,33 @@ const Hero = () => {
                 <motion.p
                   variants={itemVariants}
                   className="text-base md:text-lg text-green-100 font-mono leading-relaxed text-left"
-                >"Passionate about cloud infrastructure, automation and designing scalable, reliable systems. I enjoy automating complex operational challenges by crafting elegant, code-driven solutions."
+                >
+                  "Over a decade of building, breaking, fixing and scaling infrastructure — from bare-metal on-premise systems to hybrid cloud environments. I lead a 15-member global SRE team keeping 20+ mission-critical applications running at 99%+ uptime. Stay curious. Keep learning and contributing."
                 </motion.p>
               </div>
             </div>
+          </motion.div>
+
+          {/* Stats Bar */}
+          <motion.div
+            variants={itemVariants}
+            className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto"
+          >
+            {[
+              { value: '99%+', label: 'Uptime SLA' },
+              { value: '15', label: 'Global SRE Team' },
+              { value: '20+', label: 'Apps Supported' },
+              { value: '6', label: 'Global Locations' },
+            ].map((stat, i) => (
+              <motion.div
+                key={i}
+                whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(34, 197, 94, 0.3)" }}
+                className="terminal-window p-4 text-center"
+              >
+                <div className="text-2xl font-bold text-green-300 font-mono">{stat.value}</div>
+                <div className="text-xs text-green-400 font-mono mt-1">{stat.label}</div>
+              </motion.div>
+            ))}
           </motion.div>
 
           <motion.div
